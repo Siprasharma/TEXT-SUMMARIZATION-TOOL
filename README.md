@@ -21,6 +21,10 @@ Next, the `TextRankSummarizer` is initialized. This summarizer is based on the T
 In the script, the summarizer is instructed to extract the top **three** most important sentences from the article. These sentences are then printed as the summarized output. This approach is useful for quickly condensing large amounts of information into shorter, more digestible forms while retaining key insights. Overall, the script demonstrates a simple yet powerful method of automatic text summarization using natural language processing techniques.
 ermine the importance of each sentence by creating a graph of sentence similarities. From this graph, it selects the top-ranked sentences that best represent the overall content. In this case, the summary is limited to three sentences. Finally, the original article and the generated summary are printed to the console. This approach is useful for condensing large amounts of textual data while retaining key information and is particularly helpful in natural language processing tasks like document summarization, news filtering, or quick content review.
 
+OUTPUT : 
+
+![Image](https://github.com/user-attachments/assets/3d09df96-bbfd-4af6-b899-7da06a27cc5d)
+
 
 
 
