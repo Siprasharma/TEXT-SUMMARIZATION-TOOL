@@ -1,0 +1,32 @@
+# Import necessary modules from sumy
+from sumy.parsers.plaintext import PlaintextParser
+from sumy.nlp.tokenizers import Tokenizer
+from sumy.summarizers.text_rank import TextRankSummarizer
+
+# Input: Lengthy article
+article = """
+Machine learning is a branch of artificial intelligence that enables algorithms to uncover hidden patterns within datasets.
+It allows them to predict new, similar data without explicit programming for each task.
+Machine learning finds applications in diverse fields such as image and speech recognition, natural language processing, recommendation systems, fraud detection, portfolio optimization, and automating tasks.
+Machine learning's impact extends to autonomous vehicles, drones, and robots, enhancing their adaptability in dynamic environments.
+This approach marks a breakthrough where machines learn from data examples to generate accurate outcomes, closely intertwined with data mining and data science.
+Machine learning is important because it allows computers to learn from data and improve their performance on specific tasks without being explicitly programmed.
+This ability to learn from data and adapt to new situations makes machine learning particularly useful for tasks that involve large amounts of data, complex decision-making, and dynamic environments.
+"""
+
+# Create a parser for the input article
+parser = PlaintextParser.from_string(article, Tokenizer("english"))
+
+# Initialize the TextRank summarizer
+summarizer = TextRankSummarizer()
+
+# Summarize: Choose number of sentences in summary (e.g., 3)
+summary_sentences = summarizer(parser.document, 3)
+
+# Print results
+print("----- Original Article -----")
+print(article)
+
+print("\n----- Summarized Output -----")
+for sentence in summary_sentences:
+    print(sentence)
