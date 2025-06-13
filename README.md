@@ -1,10 +1,17 @@
 # TEXT-SUMMARIZATION-TOOL
+
 COMPANY: CODTECH IT SOLUTION
+
 NAME: SIPRA SHARMA
+
 INTERN ID :CT06DG741
+
 DOMAIN: ARTIFICIAL INTELLIGENCE
+
 DURATION : 6 WEEKS
+
 MENTOR: NEELA SANTOSH
+
 DESCRIPTION OF TASK : Here we done python programming for summarzing the long paragraph using NPL. The given Python script performs automatic text summarization using the TextRank algorithm from the Sumy library. It takes a lengthy article about machine learning and reduces it to its most essential sentences. The script begins by importing necessary modules such as PlaintextParser, Tokenizer, and TextRankSummarizer. The input article is defined as a multiline string and is parsed using PlaintextParser, which breaks the text into tokens using the English language tokenizer. The TextRankSummarizer is then used to analyze the structure of the text and detThis Python script uses the **Sumy** library to summarize a lengthy article about machine learning. The process begins by importing the necessary modules: `PlaintextParser`, `Tokenizer`, and `TextRankSummarizer`. These tools work together to break down and analyze text for summarization using the TextRank algorithm. The input is a multi-sentence article describing machine learning and its various applications in real-world scenarios like natural language processing, image recognition, autonomous vehicles, and more.
 
 First, the `PlaintextParser` is used to convert the article from a plain string into a format that the summarizer can process. It uses the `Tokenizer`, configured for English, to divide the article into sentences and words. Tokenization is a critical preprocessing step, as it helps the summarizer understand the structure and components of the text.
